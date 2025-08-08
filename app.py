@@ -8,9 +8,16 @@ GA_TRACKING_CODE = """
   gtag('config', 'G-N8WLK2S98V');
 </script>
 """
+# Inject GA tracking code at the top of the page
+st.markdown(GA_TRACKING_CODE, unsafe_allow_html=True)
 
 import streamlit as st
 import math
+import datetime
+
+# Log a visit to the Render logs
+print(f"New visitor at {datetime.datetime.now()}")
+st.markdown(GA_TRACKING_CODE, unsafe_allow_html=True)
 
 st.set_page_config(page_title="Loan / EMI / SIP Calculator", layout="centered")
 
