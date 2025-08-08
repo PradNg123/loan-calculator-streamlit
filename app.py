@@ -1,7 +1,19 @@
+GA_TRACKING_CODE = """
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8WLK2S98V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N8WLK2S98V');
+</script>
+"""
+
 import streamlit as st
 import math
 
 st.set_page_config(page_title="Loan / EMI / SIP Calculator", layout="centered")
+
 
 st.title("💰 Financial Calculator")
 option = st.sidebar.selectbox("Choose Calculator", ["EMI Calculator", "Loan Amount Calculator", "SIP Calculator"])
