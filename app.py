@@ -8,9 +8,6 @@ GA_TRACKING_CODE = """
   gtag('config', 'G-N8WLK2S98V');
 </script>
 """
-# Inject GA tracking code at the top of the page
-st.markdown(GA_TRACKING_CODE, unsafe_allow_html=True)
-
 import streamlit as st
 import math
 import datetime
